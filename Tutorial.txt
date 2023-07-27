@@ -6,14 +6,16 @@ Tutorial para criação de um projeto de testes automatizados.
         pip install selenium
     Instalar Pytest;
         pip install pytest
+    Instalar webdriver_manager
+        pip install webdriver_manager
+
 
 2 - Criar pastas principais
-    -e2e Testes
-        - locators (Uma pasta para cada pagina)
-        - pages (O init de cada pagina)
-        - tests (Onde será executados os testes)
+        -e2e Testes
+            - locators (Uma pasta para cada pagina)
+            - pages (O init de cada pagina)
+            - tests (Onde será executados os testes)
 
-2.1 - Locators (localização dos objetos no DOM)
-        * Usar XPATH, CSS SELECTOR para escolher objetos
-2.2 - Pages
-         
+    2.1 - Locators (localização dos objetos no DOM)
+            * Usar XPATH, CSS SELECTOR para escolher objetos
+    2.2 - Pages
