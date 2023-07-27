@@ -1,0 +1,1 @@
+add_botao_xpath ="// div[@class = 'orangehrm-header-container' ] // i [ @class='oxd-icon bi-plus oxd-button-icon' ]"
