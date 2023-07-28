@@ -17,5 +17,7 @@ Tutorial para criação de um projeto de testes automatizados.
             - tests (Onde será executados os testes)
 
     2.1 - Locators (localização dos objetos no DOM)
-            * Usar XPATH, CSS SELECTOR para escolher objetos
+            * Usar XPATH, CSS SELECTOR para selecionar objetos
+                (Anatomia do xpath= //button[@type='submit']")
+                (Anatomia do Css Selector = "div[class='xxxx'] [style='xxxxx']" ou "input.myForm")
     2.2 - Pages

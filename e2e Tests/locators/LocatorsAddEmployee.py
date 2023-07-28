@@ -1,0 +1,5 @@
+input_first_nome_xpath = "// input[@class = 'oxd-input oxd-input--active orangehrm-firstname' ]"
+input_middle_nome_xpath ="// input[@class = 'oxd-input oxd-input--active orangehrm-middlename' ] "
+input_last_nome_xpath ="// input[@class = 'oxd-input oxd-input--active orangehrm-lastname' ] "
+id_employee_xpath ="// div[@class='oxd-input-group oxd-input-field-bottom-space'] // input[@class = 'oxd-input oxd-input--active' ] "
+button_save_xpath=" //button[@type='submit']"
