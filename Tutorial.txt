@@ -21,3 +21,5 @@ Tutorial para criação de um projeto de testes automatizados.
                 (Anatomia do xpath= //button[@type='submit']")
                 (Anatomia do Css Selector = "div[class='xxxx'] [style='xxxxx']" ou "input.myForm")
     2.2 - Pages
+            Criar o arquivo PagesObject. (Arquivo de inicialização do navegador)
+
