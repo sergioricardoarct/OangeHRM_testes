@@ -11,15 +11,24 @@ Tutorial para criação de um projeto de testes automatizados.
 
 
 2 - Criar pastas principais
-        -e2e Testes
+        2.1 - e2e Testes
             - locators (Uma pasta para cada pagina)
             - pages (O init de cada pagina)
+            - resources (Pasta para adcionar arquivos necessários para execução dos testes - tipo imagens, graficos etc.)
             - tests (Onde será executados os testes)
 
-    2.1 - Locators (localização dos objetos no DOM)
-            * Usar XPATH, CSS SELECTOR para selecionar objetos
-                (Anatomia do xpath= //button[@type='submit']")
-                (Anatomia do Css Selector = "div[class='xxxx'] [style='xxxxx']" ou "input.myForm")
-    2.2 - Pages
-            Criar o arquivo PagesObject. (Arquivo de inicialização do navegador)
+            2.1.1 - Locators (localização dos objetos no DOM)
+                    * Usar XPATH, CSS SELECTOR para selecionar objetos
+                        (Anatomia do xpath= //button[@type='submit']")
+                        (Anatomia do Css Selector = "div[class='xxxx'] [style='xxxxx']" ou "input.myForm")
+            2.1.2 - Pages
+                    Criar o arquivo PagesObject. (Arquivo de inicialização do navegador)
+                    Criar os arquivos das paginas com seus sets, gets, inits, e validações.
+
+            2.1.3 - resources
+                    Arquivos em geral imagens e coisas afins.
+
+            2.1.4 - tests
+                    Criar a pasta conftests (configurações dos testes no Pytest)
+                    Pasta onde se cria e execulta os tests.
 
