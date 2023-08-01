@@ -21,4 +21,5 @@ class PageDashboard(PageObject):
     # SET
 
     def clicPIM(self):
+        print('Click in PIM')
         self.driver.find_element(By.XPATH, LocatorsDashboard.botao_pim_xpath).click()

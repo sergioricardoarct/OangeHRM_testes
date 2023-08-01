@@ -1,11 +1,8 @@
 import pytest
-from e2eTests.pages.PageDashboard import PageDashboard
+from e2eTests.pages.IndexPage import pageIndex
 
-@pytest.fixture():
-    def Admin_Open():
-        print('Acessando pagina de Administrador!')
-        open_admin =PageDashboard(browser='Chrome')
-        yield open_admin
-        print('Saindo do navegador!')
-        open_admin.close()
-
+@pytest.fixture()
+def Index_Open():
+    print('Login!')
+    open_index = pageIndex(browser='Chrome')
+    yield open_index
