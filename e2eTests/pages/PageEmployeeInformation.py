@@ -13,8 +13,8 @@ class PageEmployee(PageObject):
         super().__init__(driver)
 
 #SETs
-    def set_Nane(self,Nome):
-        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_first_nome_xpath).send_keys(Nome)
+    def set_Nane(self,Nome1):
+        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_first_nome_xpath).send_keys(Nome1)
     def set_Middle(self,Middle):
         self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_middle_nome_xpath).send_keys(Middle)
     def set_Last(self,Last):

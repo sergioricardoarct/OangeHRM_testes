@@ -6,17 +6,18 @@ from e2eTests.pages.PageEmployeeInformation import PageEmployee
 
 class Test_Cadastro:
 
-    def Cadastrar_Funcionario_valido(self,clicPIM,PageEmployee,loginAdmin):
-        clicPIM.click()
+    def test_Cadastrar_Funcionario_valido(self,PageDashboard,PageEmployee):
 
-        nome ='sergio'
-        meedle = 'Ricardo'
-        last = 'Nascimento'
+        PageDashboard.clicPIM()
 
-        PageEmployee.driver(driver = loginAdmin())
-        PageEmployee.set_Nane(nome)
-        PageEmployee.set_Middle(meedle)
-        PageEmployee.set_Last(last)
+        None1 ='sergio'
+        Meedle = 'Ricardo'
+        Last = 'Nascimento'
+
+        PageEmployee.driver(driver = PageEmployee)
+        PageEmployee.set_Nane(None1)
+        PageEmployee.set_Middle(Meedle)
+        PageEmployee.set_Last(Last)
         PageEmployee.set_Id()
         PageEmployee.Click_Save()
 

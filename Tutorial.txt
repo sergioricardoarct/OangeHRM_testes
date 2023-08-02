@@ -31,4 +31,9 @@ Tutorial para criação de um projeto de testes automatizados.
             2.1.4 - tests
                     Criar a pasta conftests (configurações dos testes no Pytest)
                     Pasta onde se cria e execulta os tests.
-
+                    2.1.4.1 - Criar a pasta pytest.ini (Importanticimo, ele inica o pytest para execução)
+                    2.1.4.2 - Anatomia do pytest.ini (Seguir essa nomeclatura dos testes)
+                            [pytest]
+                            python_files = *Test.py
+                            python_functions = test_*
+                            python_classes = *Test
