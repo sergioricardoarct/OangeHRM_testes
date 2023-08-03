@@ -14,7 +14,7 @@ class Test_Cadastro:
         Meedle = 'Ricardo'
         Last = 'Nascimento'
 
-        PageEmployee.driver(driver = PageEmployee)
+        pageIndex.driver(driver = pageIndex)
         PageEmployee.set_Nane(None1)
         PageEmployee.set_Middle(Meedle)
         PageEmployee.set_Last(Last)
