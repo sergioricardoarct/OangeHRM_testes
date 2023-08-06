@@ -14,11 +14,11 @@ class Test_Cadastro:
         Meedle = 'Ricardo'
         Last = 'Nascimento'
 
-        pageIndex.driver(driver = pageIndex)
+        pageIndex.open_Index()
         PageEmployee.set_Nane(None1)
         PageEmployee.set_Middle(Meedle)
         PageEmployee.set_Last(Last)
         PageEmployee.set_Id()
         PageEmployee.Click_Save()
 
-        assert PageEmployee.Click_Save()
+        assert PageDashboard.is_employee_displayed(first_name, middle_name, last_name)
