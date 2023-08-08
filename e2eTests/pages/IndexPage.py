@@ -3,19 +3,23 @@ from e2eTests.locators import LocatorsIndex
 from e2eTests.pages.PageObject import PageObject
 
 
-class pageIndex(PageObject):
+class PageIndex(PageObject):
     base_url = 'https://opensource-demo.orangehrmlive.com/'
-    def __init__(self, driver= None, browser='chorme'):
-        super().__init__(driver, browser=browser)
-        self.open_Index()
+
+    def __init__(self, driver):
+        super().__init__(driver)
+
 
     def open_Index(self):
         self.driver.get(self.base_url)
+
     def username(self):
-        self.driver.find_element(By.XPATH,LocatorsIndex.input_userName_xpath).send_keys('Admin')
+        self.driver.find_element(By.XPATH, LocatorsIndex.input_userName_xpath).send_keys()
 
     def password(self):
-        self.driver.find_element(By.XPATH,LocatorsIndex.input_password_xpath).send_keys('admin123')
+        self.driver.find_element(By.XPATH, LocatorsIndex.input_password_xpath).send_keys()
 
-    def Click_login(self):
+    def click_login(self):
         self.driver.find_element(By.XPATH, LocatorsIndex.click_button_Login).click()
+
+

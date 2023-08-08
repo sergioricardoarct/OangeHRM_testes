@@ -1,8 +1,12 @@
 import pytest
-from e2eTests.pages.IndexPage import pageIndex
+from e2eTests.pages.IndexPage import PageIndex
 
 @pytest.fixture()
 def Index_Open():
     print('Login!')
-    open_index = pageIndex(browser='Chrome')
+    open_index = PageIndex(brower='chrome')
+    open_index.username('Admin')
+    open_index.password('Adm123')
+    open_index.click_login()
     yield open_index
+    open_index.close()
