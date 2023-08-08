@@ -13,11 +13,11 @@ class PageIndex(PageObject):
     def open_Index(self):
         self.driver.get(self.base_url)
 
-    def username(self):
-        self.driver.find_element(By.XPATH, LocatorsIndex.input_userName_xpath).send_keys()
+    def username(self,user):
+        self.driver.find_element(By.XPATH, LocatorsIndex.input_userName_xpath).send_keys(user)
 
-    def password(self):
-        self.driver.find_element(By.XPATH, LocatorsIndex.input_password_xpath).send_keys()
+    def password(self, word):
+        self.driver.find_element(By.XPATH, LocatorsIndex.input_password_xpath).send_keys(word)
 
     def click_login(self):
         self.driver.find_element(By.XPATH, LocatorsIndex.click_button_Login).click()
