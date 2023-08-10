@@ -7,7 +7,7 @@ import e2eTests.pages.PageDashboard
 class Cadastro_Test:
 
     def test_abrir_inicial(self,Index_Open, PageDashboard):
-        pageIndex = Index_Open(driver=Index_Open.driver)
+        pageIndex = open_index(driver=Index_Open.driver)
         pageIndex.open_Index()
 
         PageDashboard = PageDashboard(driver=PageDashboard.driver)
