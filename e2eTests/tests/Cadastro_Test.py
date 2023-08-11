@@ -1,4 +1,5 @@
 from e2eTests.pages.DashboardPage import DashboardPage
+from e2eTests.pages.EmployeeInformationPage import EmployeeInformationPage
 
 
 class Cadastro_Test:
@@ -7,3 +8,5 @@ class Cadastro_Test:
         PageDashboard = DashboardPage(driver=index_open.driver)
         PageDashboard.clickPIM()
         assert PageDashboard
+
+    def test_cadastrar_funcionario_valido(self, employee_open):

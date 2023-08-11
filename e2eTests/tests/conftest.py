@@ -1,6 +1,8 @@
+from datetime import time
+
 import pytest
 from e2eTests.pages.IndexPage import IndexPage
-
+from e2eTests.pages.EmployeeInformationPage import EmployeeInformationPage
 
 @pytest.fixture()
 def index_open():
@@ -13,3 +15,5 @@ def index_open():
 
     yield open_index
 
+@pytest.fixture()
+def employee_open():

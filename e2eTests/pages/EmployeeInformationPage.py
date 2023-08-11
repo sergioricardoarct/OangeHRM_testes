@@ -5,22 +5,30 @@ from e2eTests.pages.PageObject import PageObject
 
 
 # INIT
-class PageEmployee(PageObject):
-    def __init__(self, driver):
-        super().__init__(driver)
+class EmployeeInformationPage(PageObject):
+    def __init__(self, driver=None, browser='chrome'):
+        super().__init__(driver, browser=browser)
+
 
     # SETs
-    def set_Nane(self):
-        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_first_nome_xpath).send_keys()
+    base_url = 'https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList'
 
-    def set_Middle(self):
-        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_middle_nome_xpath).send_keys()
+    def open_employee(self):
+        self.driver.get(self.base_url)
 
-    def set_Last(self):
-        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_last_nome_xpath).send_keys()
+    def set_nane(self, nome):
+        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_first_nome_xpath).send_keys(nome)
 
-    def set_Id(self):
-        self.driver.find_element(By.XPATH, LocatorsAddEmployee.id_employee_xpath).send_keys()
+    def set_middle(self, Middle):
+        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_middle_nome_xpath).send_keys(Middle)
 
-    def click_Save(self):
+    def set_last(self, last):
+        self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_last_nome_xpath).send_keys(last)
+
+    def set_id(self, nid):
+        self.driver.find_element(By.XPATH, LocatorsAddEmployee.id_employee_xpath).send_keys(nid)
+
+    def click_save(self):
         self.driver.find_element(By.XPATH, LocatorsAddEmployee.button_save_xpath).click()
+
+
