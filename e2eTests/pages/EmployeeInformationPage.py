@@ -6,15 +6,11 @@ from e2eTests.pages.PageObject import PageObject
 
 # INIT
 class EmployeeInformationPage(PageObject):
-    def __init__(self, driver=None, browser='chrome'):
-        super().__init__(driver, browser=browser)
+    def __init__(self, driver):
+        super().__init__(driver)
 
 
     # SETs
-    base_url = 'https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList'
-
-    def open_employee(self):
-        self.driver.get(self.base_url)
 
     def set_nane(self, nome):
         self.driver.find_element(By.XPATH, LocatorsAddEmployee.input_first_nome_xpath).send_keys(nome)

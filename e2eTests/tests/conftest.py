@@ -3,6 +3,7 @@ from datetime import time
 import pytest
 from e2eTests.pages.IndexPage import IndexPage
 from e2eTests.pages.EmployeeInformationPage import EmployeeInformationPage
+from e2eTests.pages.PIMPage import PimPage
 
 @pytest.fixture()
 def index_open():
@@ -16,4 +17,7 @@ def index_open():
     yield open_index
 
 @pytest.fixture()
-def employee_open():
+def open_pim():
+    open_PIM = PimPage(browser='chrome')
+    open_PIM.click_add()
+    yield open_pim

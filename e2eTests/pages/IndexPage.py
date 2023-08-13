@@ -9,6 +9,7 @@ class IndexPage(PageObject):
     def __init__(self, driver= None, browser='chrome'):
         super().__init__(driver, browser=browser)
         self.open_index()
+
     def open_index(self):
         self.driver.get(self.base_url)
 
